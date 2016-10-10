@@ -1,12 +1,12 @@
-## 日志采集部署-beta版本
+## 流量日志自动化采集说明
 
-### 1. 在页面head埋点`全局函数`后加入`script`外链
+### 1. 在页面加入`script`外链
 ```html
 <script src="http://www.misued.com/log.js"></script>
 ```
 将以下JS代码复制到您所需分析页面中的 `<head>` 和 `</head>` 标签之间即可。安装成功后，除 localhost 和 IP 地址外，所有网址下的行为数据都将会被收集
 
-### 2.为模块增加埋点
+### 2.交互标签自动采集规范实例
 ```html
 <body>
    <span class="blue_btn" dc="{fm:'beha',tag:'lala'}">啦啦</span>
