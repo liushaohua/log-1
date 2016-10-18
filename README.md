@@ -8,17 +8,24 @@
 
 ### 2.标签自动采集规范实例
 
-#### 2.1 点击事件
+#### 2.1 交互点击事件
 ```html
 <body>
    <span dc="{tag:'reset',fm:'beha','key1':'key1','key2':'key2'}">重置</span>
 </body>
 ```
 
-#### 2.2 输入框光标文本采集
+#### 2.2 外链链接跳转
 ```html
 <body>
-   <input dc="{tag:'input2',fm:'blur'}"/>
+   <a dc="{tag:'bigdata',fm:'href','key1':'key1','key2':'key2'}">大数据</a>
+</body>
+```
+
+#### 2.3 输入框光标文本采集
+```html
+<body>
+   <input dc="{tag:'name',fm:'blur'}" value="请输入姓名"/>
 </body>
 ```
 
@@ -29,6 +36,11 @@
 
 ### 注意事项
 - 尽量不要阻止冒泡，如果需要请`手动发送日志`
+```html
+<body>
+   <span dc="{tag:'reset',fm:'beha','key1':'key1','key2':'key2'}" id="clickDom">我会阻止冒泡</span>
+</body>
+```
 ```javascript
 document.getElementById('clickDom').onclick = function (ev) {
    alert(3);
