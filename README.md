@@ -18,7 +18,7 @@
 #### 2.2 外链链接跳转
 ```html
 <body>
-   <a dc="{tag:'bigdata',fm:'href','key1':'key1','key2':'key2'}">大数据</a>
+   <a href="http://bigdata.58.com" target="_blank" dc="{tag:'bigdata',fm:'href','key1':'key1','key2':'key2'}">大数据</a>
 </body>
 ```
 
