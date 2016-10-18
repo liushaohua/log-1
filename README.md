@@ -2,7 +2,7 @@
 
 ### 1. 在页面加入`script`外链
 ```html
-<script src="http://www.misued.com/log.js"></script>
+<script src="http://j2.58cdn.com.cn/mis/fe/log/log.js"></script>
 ```
 将以下JS代码复制到您所需分析页面中的 `<head>` 和 `</head>` 标签之间即可。安装成功后，除 localhost 和 IP 地址外，所有网址下的行为数据都将会被收集
 
