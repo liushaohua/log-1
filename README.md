@@ -20,7 +20,7 @@
 <body>
    <input dc="{tag:'input2',fm:'blur'}"/>
 </body>
-
+```
 
 需要为需要统计埋点的`dom`元素上增加`dc`属性(JSON)
 - `tag`为模块的名称(必选)，字符长度最好限制在10个字符内
